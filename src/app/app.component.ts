@@ -36,28 +36,28 @@ export class AppComponent {
     }).subscribe({
       // if success response, alert success
       next: resp => {        
-        console.log(resp)
-          Swal.fire({
-            title: 'Success!',
-            text: 'Do you want to continue',
-            icon: 'success',
-            confirmButtonText: 'Cool'
-          }).then((result) => {
-            // if confirm button selected, navigate to next page
-            if (result.isConfirmed) {
-              document.location.href = 'http://onecause.com'
-            }
-          })
+        // console.log(resp)
+        Swal.fire({
+          title: 'Success!',
+          text: 'Do you want to continue',
+          icon: 'success',
+          confirmButtonText: 'Cool'
+        }).then((result) => {
+          // if confirm button selected, navigate to next page
+          if (result.isConfirmed) {
+            document.location.href = 'http://onecause.com'
+          }
+        })
       },
       // if error, display alert with error message from API
       error: error => {
-        console.log(error)
-          Swal.fire({
-            title: 'Error!',
-            text: error.error.message,
-            icon: 'error',
-            confirmButtonText: 'Shucks'
-          })
+        // console.log(error)
+        Swal.fire({
+          title: 'Error!',
+          text: error.error.message,
+          icon: 'error',
+          confirmButtonText: 'Shucks'
+        })
       }
     })
 
