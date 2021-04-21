@@ -1,0 +1,74 @@
+
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 8px 0;
+}
+
+.content {
+    display: flex;
+    margin: auto;
+    padding: 0 16px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 200);
+}
+
+.card.highlight-card {
+    border-radius: 5px;
+    background-color: white;
+    color: #393E41;
+    font-weight: 600;
+    border: none;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: inline-flex;
+    text-align: center;
+    vertical-align: middle;
+}
+.login_form{
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+#login_submit{
+    width: 25%;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    text-align: center;
+}
+.log_input{
+    width: 75%;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+
+    .card:not(.highlight-card) {
+        height: 16px;
+        margin: 8px 0;
+    }
+
+    .card.highlight-card span {
+        margin-left: 72px;
+    }
+}
