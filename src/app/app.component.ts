@@ -22,8 +22,8 @@ export class AppComponent {
   async submitLogin(){
 		// get time for token comparison
     let today = new Date()
-    let cur_hour = today.getHours().toString().padStart(2, '0')
-    let cur_minute = today.getMinutes().toString().padStart(2, '0')
+    let cur_hour = today.getHours()
+    let cur_minute = today.getMinutes()
     let token = `${cur_hour}${cur_minute}`
     let token_int = parseInt(token)
 
