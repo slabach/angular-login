@@ -65,8 +65,3 @@ export class AppComponent {
     this.log_pwd = ''
   }
 }
-
-// {
-//   "username": "c137@onecause.com",
-//   "password": "#th@nH@rm#y#r!$100%D0p#"
-// }
